@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* 2025 Color Theme - Modern Car Rental */
+    --background: 75 26% 81%; /* Soft Beige */
+    --foreground: 225 21% 26%; /* Deep Slate Blue */
+
+    --card: 0 0% 100%; /* Clean white for cards */
+    --card-foreground: 225 21% 26%; /* Deep Slate Blue */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 21% 26%;
+
+    --primary: 3 94% 63%; /* Tomato Red - energetic, modern */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 24 96% 72%; /* Sandy Brown - warm, friendly */
+    --secondary-foreground: 225 21% 26%;
+
+    --muted: 5 26% 51%; /* Indian Red - soft, inviting */
+    --muted-foreground: 225 21% 26%;
+
+    --accent: 355 63% 29%; /* Maroon - sophisticated, bold */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 75 26% 75%; /* Lighter beige for borders */
+    --input: 0 0% 100%; /* White input backgrounds */
+    --ring: 3 94% 63%; /* Tomato Red for focus rings */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode with 2025 theme */
+    --background: 225 21% 16%; /* Darker slate blue */
+    --foreground: 75 26% 85%; /* Light beige */
+
+    --card: 225 21% 20%; /* Dark card background */
+    --card-foreground: 75 26% 85%;
+
+    --popover: 225 21% 20%;
+    --popover-foreground: 75 26% 85%;
+
+    --primary: 3 94% 63%; /* Keep tomato red for dark mode */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 24 96% 72%; /* Sandy brown for dark mode */
+    --secondary-foreground: 225 21% 16%;
+
+    --muted: 355 63% 29%; /* Maroon for muted elements */
+    --muted-foreground: 75 26% 75%;
+
+    --accent: 5 26% 51%; /* Indian red for accents */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 225 21% 25%; /* Darker border */
+    --input: 225 21% 22%; /* Dark input background */
+    --ring: 3 94% 63%; /* Tomato red focus ring */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
