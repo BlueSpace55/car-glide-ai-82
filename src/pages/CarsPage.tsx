@@ -51,7 +51,7 @@ const CarsPage = () => {
       id: 3,
       name: 'Nissan Altima or similar',
       category: 'Intermediate',
-      image: '/images/Toyota Corolla.JPG',
+      image: '/images/Nissan Altima.jpg',
       passengers: 5,
       bags: 3,
       transmission: 'Automatic',
