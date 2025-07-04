@@ -44,10 +44,10 @@ const Header = () => {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" asChild>
+            <Button variant="ghost" asChild className="hover:bg-green-900">
               <Link to="/signin">Sign In</Link>
             </Button>
-            <Button asChild>
+            <Button asChild className="bg-green-500 hover:bg-green-900">
               <Link to="/signup">Sign Up</Link>
             </Button>
           </div>

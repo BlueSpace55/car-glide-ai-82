@@ -426,7 +426,7 @@ const SignUpPage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-green-500 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         <Card>
           <CardHeader>
@@ -444,14 +444,14 @@ const SignUpPage = () => {
 
               <div className="flex justify-between mt-8">
                 {currentStep > 1 && (
-                  <Button type="button" variant="outline" onClick={prevStep}>
+                  <Button type="button" variant="outline" onClick={prevStep} className="hover:bg-gray-500">
                     <ChevronLeft className="w-4 h-4 mr-2" />
                     Back
                   </Button>
                 )}
                 
                 {currentStep < 4 ? (
-                  <Button type="button" onClick={nextStep} className="ml-auto">
+                  <Button type="button" onClick={nextStep} className="ml-auto bg-green-500 hover:bg-green-900">
                     Continue
                     <ChevronRight className="w-4 h-4 ml-2" />
                   </Button>

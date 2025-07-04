@@ -68,9 +68,9 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-green-500">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-accent to-muted text-white">
+      <section className="py-16 md:py-24 bg-green-500 from-primary via-accent to-muted text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             About Pivoz
@@ -205,7 +205,7 @@ const AboutPage = () => {
                       ))}
                     </div>
                   </div>
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
+                  <Button variant="outline" className="w-full group-hover:text-primary-foreground transition-colors hover:bg-gray-700" asChild>
                     <Link to="/locations">
                       View Locations
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -248,7 +248,7 @@ const AboutPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary to-accent text-white">
+      <section className="py-16 bg-green-500 from-primary to-accent text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Experience the Pivoz Difference?

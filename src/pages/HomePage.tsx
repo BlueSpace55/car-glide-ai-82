@@ -90,15 +90,19 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Rental Form */}
-      <section className="relative bg-gradient-to-br from-primary via-accent to-muted text-white py-16 md:py-32 overflow-hidden min-h-[90vh]">
+      <section className="relative bg-green-500 from-primary via-accent to-muted text-white py-16 md:py-32 overflow-hidden min-h-[90vh]">
         <div className="absolute inset-0 bg-black/20"></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10"
+              style={{
+
+          backgroundImage: "url('/images/nissan-altima.jpg')",  // renamed file without spaces
+        }}>
           <div className="text-center mb-12">
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 animate-fade-in leading-tight">
               Advanced Car Rental
               <br/>
-              <span className=" bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mt-6">
+              <span className=" bg-yellow-500 bg-clip-text text-transparent mt-6">
                 Reimagined
               </span>
             </h1>
@@ -142,7 +146,7 @@ const HomePage = () => {
                         </div>
                         <div className="p-4">
                           <h3 className="font-semibold text-foreground">{car.alt}</h3>
-                          <Button className="w-full mt-3 bg-primary hover:bg-primary/90">
+                          <Button className="w-full  bg-yellow-500 hover:bg-gray-700">
                             View Details
                           </Button>
                         </div>
@@ -244,9 +248,9 @@ const HomePage = () => {
       </section>
 
       {/* Sign up for Specials */}
-      <section className="py-16 bg-card">
+      <section className="py-16 bg-card bg-green">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="shadow-lg border-2 border-primary/20">
+          <Card className="shadow-lg border-2 border-white/20">
             <CardContent className="p-8">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -286,7 +290,7 @@ const HomePage = () => {
                   </div>
                 </div>
 
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+                <Button type="submit" className="w-full bg-green-500 hover:bg-green-900">
                   Sign Up for Specials
                 </Button>
               </form>
@@ -320,7 +324,7 @@ const HomePage = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-2">{location.name}</h3>
                   <p className="text-muted-foreground mb-4">{location.description}</p>
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <Button variant="outline" className="w-full group-hover:bg-gray-500 group-hover:text-primary-foreground transition-colors">
                     Explore {location.name}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -332,7 +336,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary to-accent text-white">
+      <section className="py-16 bg-green-500 from-primary to-accent text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Experience the Future of Car Rental?
@@ -347,7 +351,7 @@ const HomePage = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="text-primary bg-white border-white hover:bg-primary-foreground/10" asChild>
+            <Button size="lg" variant="outline" className="text-black bg-white border-white hover:bg-primary-foreground/10" asChild>
               <Link to="/signup">Get Started Today</Link>
             </Button>
           </div>

@@ -141,7 +141,7 @@ const CarsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-green-500">
       {/* Header Section */}
       <section className="bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -182,13 +182,13 @@ const CarsPage = () => {
                 
                 <div className="space-y-6">
                   <div>
-                    <Label htmlFor="car-type">Car Type</Label>
+                    <Label htmlFor="car-type text-sm hover:bg-gray-700">Car Type</Label>
                     <Select value={filters.carType} onValueChange={(value) => setFilters({...filters, carType: value})}>
                       <SelectTrigger>
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="all">All Types</SelectItem>
+                        <SelectItem value="all ">All Types</SelectItem>
                         <SelectItem value="economy">Economy</SelectItem>
                         <SelectItem value="compact">Compact</SelectItem>
                         <SelectItem value="intermediate">Intermediate</SelectItem>
@@ -348,12 +348,12 @@ const CarsPage = () => {
 
                           <div className="space-y-2">
                             <Button 
-                              className="w-full bg-primary hover:bg-primary/90"
+                              className="w-full bg-yellow-500 hover:bg-yellow-700"
                               onClick={() => handleSelectVehicle(vehicle.id)}
                             >
                               Select Vehicle
                             </Button>
-                            <Button variant="outline" className="w-full text-sm">
+                            <Button variant="outline" className="w-full text-sm hover:bg-gray-700">
                               View Details
                             </Button>
                           </div>
@@ -374,7 +374,7 @@ const CarsPage = () => {
 
             {/* Load More */}
             <div className="text-center mt-8">
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="text-sm hover:bg-gray-700">
                 Load More Vehicles
               </Button>
             </div>

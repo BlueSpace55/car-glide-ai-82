@@ -121,14 +121,14 @@ const LocationsPage = () => {
   }, {} as Record<string, typeof locations>);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-green-500 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Pivoz Locations
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Find convenient Pivoz rental locations across Texas, Florida, and Georgia. 
             Most locations offer 24/7 smart access pickup and return.
           </p>
@@ -151,8 +151,8 @@ const LocationsPage = () => {
         {/* Locations by State */}
         {Object.entries(groupedLocations).map(([state, stateLocations]) => (
           <div key={state} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-              <MapPin className="h-8 w-8 text-blue-600 mr-3" />
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
+              <MapPin className="h-8 w-8 text-white mr-3" />
               {state}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -181,7 +181,7 @@ const LocationsPage = () => {
                       <Clock className="h-5 w-5 text-gray-400 mr-2" />
                       <p className="text-gray-600">{location.hours}</p>
                     </div>
-                    <Button className="w-full mt-4">
+                    <Button className="w-full mt-4 bg-yellow-500 hover:bg-yellow-700">
                       Reserve at This Location
                     </Button>
                   </CardContent>

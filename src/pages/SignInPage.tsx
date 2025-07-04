@@ -27,7 +27,7 @@ const SignInPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-green-500 py-12 px-4 sm:px-6 lg:px-8">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold text-gray-900">
@@ -73,7 +73,7 @@ const SignInPage = () => {
               </Link>
             </div>
 
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full  bg-green-500 hover:bg-green-900">
               Sign In
             </Button>
           </form>

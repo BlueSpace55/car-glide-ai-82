@@ -26,7 +26,7 @@ const RentalSearchForm = () => {
   };
 
   return (
-    <Card className="w-full max-w-4xl mx-auto shadow-lg">
+    <Card className="w-full max-w-4xl mx-auto shadow-lg" style={{ backgroundColor: '#ccffcc' }}>
       <CardContent className="p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Location Fields */}
@@ -159,7 +159,7 @@ const RentalSearchForm = () => {
           </div>
 
           {/* Submit Button */}
-          <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-6">
+          <Button type="submit" className="w-full bg-yellow-600 hover:bg-yellow-900 text-lg py-6">
             Reserve Your Car
           </Button>
         </form>
