@@ -95,12 +95,14 @@ const HomePage = () => {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="text-center mb-12">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 animate-fade-in leading-tight">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 animate-fade-in leading-tight">
               Advanced Car Rental
-              <span className="block bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mt-4">
+              <br/>
+              <span className=" bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mt-6">
                 Reimagined
               </span>
             </h1>
+            <br/>
             <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto animate-fade-in">
               Experience the future of car rental with AI-powered features, smart access systems, and personalized service.
             </p>
