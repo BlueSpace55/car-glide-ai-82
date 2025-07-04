@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -8,16 +7,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Car, Users, Luggage, Settings, Fuel, Shield, Wifi, Star, Filter } from 'lucide-react';
-
-// Import car images
-import nissanVersaImg from '@/assets/nissan-versa.jpg';
-import toyotaCorollaImg from '@/assets/toyota-corolla.jpg';
-import nissanAltimaImg from '@/assets/nissan-altima.jpg';
-import toyotaCamryImg from '@/assets/toyota-camry.jpg';
-import chevroletImpalaImg from '@/assets/chevrolet-impala.jpg';
-import bmw3SeriesImg from '@/assets/bmw-3series.jpg';
-import jeepGrandCherokeeImg from '@/assets/jeep-grand-cherokee.jpg';
-import fordMustangImg from '@/assets/ford-mustang-convertible.jpg';
 
 const CarsPage = () => {
   const [sortBy, setSortBy] = useState('recommended');
@@ -33,7 +22,7 @@ const CarsPage = () => {
       id: 1,
       name: 'Nissan Versa or similar',
       category: 'Economy',
-      image: nissanVersaImg,
+      image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
       passengers: 5,
       bags: 2,
       transmission: 'Automatic',
@@ -48,7 +37,7 @@ const CarsPage = () => {
       id: 2,
       name: 'Toyota Corolla or similar',
       category: 'Compact',
-      image: toyotaCorollaImg,
+      image: '/images/Toyota Corolla.JPG',
       passengers: 5,
       bags: 2,
       transmission: 'Automatic',
@@ -62,7 +51,7 @@ const CarsPage = () => {
       id: 3,
       name: 'Nissan Altima or similar',
       category: 'Intermediate',
-      image: nissanAltimaImg,
+      image: '/images/Toyota Corolla.JPG',
       passengers: 5,
       bags: 3,
       transmission: 'Automatic',
@@ -76,7 +65,7 @@ const CarsPage = () => {
       id: 4,
       name: 'Toyota Camry or similar',
       category: 'Standard',
-      image: toyotaCamryImg,
+      image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
       passengers: 5,
       bags: 3,
       transmission: 'Automatic',
@@ -90,7 +79,7 @@ const CarsPage = () => {
       id: 5,
       name: 'Chevrolet Impala or similar',
       category: 'Full Size',
-      image: chevroletImpalaImg,
+      image: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
       passengers: 5,
       bags: 4,
       transmission: 'Automatic',
@@ -104,7 +93,7 @@ const CarsPage = () => {
       id: 6,
       name: 'BMW 3 Series or similar',
       category: 'Premium',
-      image: bmw3SeriesImg,
+      image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
       passengers: 5,
       bags: 3,
       transmission: 'Automatic',
@@ -119,7 +108,7 @@ const CarsPage = () => {
       id: 7,
       name: 'Jeep Grand Cherokee or similar',
       category: 'SUV',
-      image: jeepGrandCherokeeImg,
+      image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
       passengers: 7,
       bags: 5,
       transmission: 'Automatic',
@@ -133,7 +122,7 @@ const CarsPage = () => {
       id: 8,
       name: 'Ford Mustang Convertible or similar',
       category: 'Convertible',
-      image: fordMustangImg,
+      image: '/images/Ford Mustang.JPG',
       passengers: 4,
       bags: 2,
       transmission: 'Automatic',

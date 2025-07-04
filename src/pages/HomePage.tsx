@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -10,24 +11,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, Users, Car, MapPin, Quote } from 'lucide-react';
 
-// Import real car images
-import carHero1 from '@/assets/car-hero-1.jpg';
-import carHero2 from '@/assets/car-hero-2.jpg';
-import carHero3 from '@/assets/car-hero-3.jpg';
-import carHero4 from '@/assets/car-hero-4.jpg';
-import carHero5 from '@/assets/car-hero-5.jpg';
-import carHero6 from '@/assets/car-hero-6.jpg';
-
-// Import feature images
-import premiumFleetImg from '@/assets/premium-fleet.jpg';
-import smartAccessImg from '@/assets/smart-access.jpg';
-import aiPoweredImg from '@/assets/ai-powered.jpg';
-
-// Import state images
-import texasImg from '@/assets/texas-landscape.jpg';
-import floridaImg from '@/assets/florida-beach.jpg';
-import georgiaImg from '@/assets/georgia-savannah.jpg';
-
 const HomePage = () => {
   const [specialsForm, setSpecialsForm] = useState({
     email: '',
@@ -35,36 +18,36 @@ const HomePage = () => {
   });
 
   const carImages = [
-    { src: carHero1, alt: 'Luxury Red Sports Car' },
-    { src: carHero2, alt: 'Premium White SUV' },
-    { src: carHero3, alt: 'Electric Blue Compact Car' },
-    { src: carHero4, alt: 'Silver Convertible' },
-    { src: carHero5, alt: 'Black Premium Sedan' },
-    { src: carHero6, alt: 'Green Eco-Friendly Hybrid' }
+    { src: '/images/Luxury Red Sports Car.JPG', alt: 'Luxury Red Sports Car' },
+    { src: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=600&fit=crop', alt: 'Premium White SUV' },
+    { src: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&h=600&fit=crop', alt: 'Electric Blue Compact Car' },
+    { src: 'https://images.unsplash.com/photo-1544829798-9ab9f5ac3c3f?w=800&h=600&fit=crop', alt: 'Silver Convertible' },
+    { src: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&h=600&fit=crop', alt: 'Black Premium Sedan' },
+    { src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop', alt: 'Green Eco-Friendly Hybrid' }
   ];
 
   const popularLocations = [
-    { name: 'Texas', image: texasImg, description: 'Explore the Lone Star State' },
-    { name: 'Florida', image: floridaImg, description: 'Sunshine and beaches await' },
-    { name: 'Georgia', image: georgiaImg, description: 'Southern charm and hospitality' }
+    { name: 'Texas', image: '/images/texas road.JPG', description: 'Explore the Lone Star State' },
+    { name: 'Florida', image: '/images/florida road.JPG', description: 'Sunshine and beaches await' },
+    { name: 'Georgia', image: '/images/georgia road.JPG', description: 'Southern charm and hospitality' }
   ];
 
   const serviceHighlights = [
     {
       icon: Car,
-      image: premiumFleetImg,
+      image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=600&fit=crop',
       title: 'Premium Fleet',
       description: 'From economy cars to luxury vehicles, find the perfect ride for your journey.'
     },
     {
       icon: Users,
-      image: smartAccessImg,
+      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop',
       title: 'Smart Access',
       description: 'Contactless pickup with our innovative keyless entry systems.'
     },
     {
       icon: Star,
-      image: aiPoweredImg,
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
       title: 'AI-Powered',
       description: 'Dynamic pricing and personalized recommendations for the best experience.'
     }
