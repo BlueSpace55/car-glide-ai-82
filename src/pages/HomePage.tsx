@@ -21,9 +21,7 @@ const HomePage = () => {
     { src: '/images/Luxury Red Sports Car.JPG', alt: 'Luxury Red Sports Car' },
     { src: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=600&fit=crop', alt: 'Premium White SUV' },
     { src: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&h=600&fit=crop', alt: 'Electric Blue Compact Car' },
-    { src: 'https://images.unsplash.com/photo-1544829798-9ab9f5ac3c3f?w=800&h=600&fit=crop', alt: 'Silver Convertible' },
     { src: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&h=600&fit=crop', alt: 'Black Premium Sedan' },
-    { src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop', alt: 'Green Eco-Friendly Hybrid' }
   ];
 
   const popularLocations = [
