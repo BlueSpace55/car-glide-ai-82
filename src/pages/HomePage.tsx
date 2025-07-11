@@ -92,26 +92,37 @@ const HomePage = () => {
       {/* Hero Section with Rental Form */}
       <section className="relative bg-green-500 from-primary via-accent to-muted text-white py-16 md:py-32 overflow-hidden min-h-[90vh]">
         <div className="absolute inset-0 bg-black/20"></div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10"
-              style={{
 
-          backgroundImage: "url('/images/nissan-altima.jpg')",  // renamed file without spaces
-        }}>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10"
+          style={{
+
+            backgroundImage: "url('/images/nissan-altima.jpg')",  // renamed file without spaces
+          }}>
           <div className="text-center mb-12">
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 animate-fade-in leading-tight">
               Advanced Car Rental
-              <br/>
+              <br />
               <span className=" bg-yellow-500 bg-clip-text text-transparent mt-6">
                 Reimagined
               </span>
+              <br />
+              <h2 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-6 animate-fade-in leading-tight">
+                <span>Developer: Sasaki Taiki from Japan.</span>
+                <br />
+                <span>Contact email: sasakitaiki5555@gmail</span>
+                <br />
+                <span>Contact Telegram: @AIdev5055</span>
+                <br />
+                <span>Whats app: +1 (418) 801-9845</span>
+              </h2>
+
             </h1>
-            <br/>
+            <br />
             <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto animate-fade-in">
               Experience the future of car rental with AI-powered features, smart access systems, and personalized service.
             </p>
           </div>
-          
+
           <div className="animate-scale-in">
             <RentalSearchForm />
           </div>
@@ -129,7 +140,7 @@ const HomePage = () => {
               Discover our wide selection of vehicles for every journey
             </p>
           </div>
-          
+
           <Carousel className="w-full max-w-6xl mx-auto" opts={{ align: "start", loop: true }}>
             <CarouselContent>
               {carImages.map((car, index) => (
@@ -138,8 +149,8 @@ const HomePage = () => {
                     <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
                       <CardContent className="p-0">
                         <div className="aspect-video overflow-hidden">
-                          <img 
-                            src={car.src} 
+                          <img
+                            src={car.src}
                             alt={car.alt}
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           />
@@ -184,8 +195,8 @@ const HomePage = () => {
                 <Card key={index} className="group hover:scale-105 transition-transform duration-300 overflow-hidden">
                   <CardContent className="p-0">
                     <div className="aspect-video overflow-hidden">
-                      <img 
-                        src={service.image} 
+                      <img
+                        src={service.image}
                         alt={service.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -228,9 +239,8 @@ const HomePage = () => {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`h-4 w-4 ${
-                          i < review.rating ? 'text-secondary fill-current' : 'text-muted'
-                        }`}
+                        className={`h-4 w-4 ${i < review.rating ? 'text-secondary fill-current' : 'text-muted'
+                          }`}
                       />
                     ))}
                   </div>
@@ -315,8 +325,8 @@ const HomePage = () => {
             {popularLocations.map((location, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
                 <div className="h-48 overflow-hidden">
-                  <img 
-                    src={location.image} 
+                  <img
+                    src={location.image}
                     alt={`${location.name} landscape`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
